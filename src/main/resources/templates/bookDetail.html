@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book detail</title>
+</head>
+<body>
+<h1>Book detail</h1>
+<p th:object="${book}">
+    Title: [[*{title}]] <br/>
+    ISBN: [[*{isbn}]] <br/>
+    Author: [[*{author}]] <br/>
+    Price: [[*{price}]]
+</p>
+</body>
+</html>
