@@ -15,6 +15,7 @@ public class WebConfig {
 
         return restTemplateBuilder
                 .rootUri(baseUrl)
+                .basicAuthentication("homer", "password")
                 .build();
     }
 }
